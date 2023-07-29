@@ -4,6 +4,10 @@ import Typed from "typed.js";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+
+import SocialIcon from "react-social-icons";
+
+
 const Hero = () => {
   const typedRef = useRef(null);
   const [showP, setShowP] = useState(false);
@@ -26,6 +30,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-row relative z-0 w-full mx-auto items-center bg-fixed pt-14">
+
       <div className="flex-1 text-center">
         <h1 className="2xl:text-[72px] sm:text-[72px] text-[50px] font-extrabold">
           <span ref={typedRef}></span>
@@ -64,7 +69,7 @@ const Hero = () => {
               <Image
                 src="/haris-bitmoji.png"
                 alt="haris bitmoji"
-                height={95}
+                height={100}
                 width={335.9}
               />
             </div>
