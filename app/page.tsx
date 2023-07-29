@@ -1,5 +1,8 @@
-import { Hero } from "@/components";
+import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -15,8 +18,14 @@ export default function Home() {
         />
         <Hero />
       </section>
-      <section className="snap-start">
+      <section className="snap-start relative z-0 w-full h-screen mx-auto items-center">
         <About />
+      </section>
+      <section className="snap-start relative z-0 w-full h-screen mx-auto items-center">
+        <Experience />
+      </section>
+      <section className="snap-start relative z-0 w-full h-screen mx-auto items-center">
+        <Projects />
       </section>
     </main>
   );
