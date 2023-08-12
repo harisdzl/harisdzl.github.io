@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # haris-portfolio
 My own personal portfolio
 =======
