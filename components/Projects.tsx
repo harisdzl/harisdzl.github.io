@@ -19,21 +19,21 @@ const Projects = () => {
             title="timeNUS"
             description="NUS Orbital Program 2022 (Advanced). Developed a full stack productivity application tailored towards university students."
             link="https://timenus-orbital.web.app/"
-            image="public/timenus-cropped-logo.png"
+            image="@/public/timenus-cropped-logo.png"
             gitLink="https://github.com/harisdzl/timeNUS-Orbital"
           />
           <Cards
             title="WorkWise"
             description="BT3103 Final Project. Developed a full stack productivity application tailored towards businesses."
             link="https://workwise-b1604.web.app/"
-            image="/workwise-logo.png"
+            image="@/public/workwise-logo.png"
             gitLink="https://github.com/harisdzl/WorkWise"
           />
           <Cards
             title="Wiki Q&A Generator"
             description="Developed a Wikipedia Question-Answer generator utilising Hugging Face's Transformer library."
             link="https://harisdzl-wiki-question-answer-pair-wiki-qaapp-mc1qut.streamlit.app/"
-            image="public/huggingface-wiki.png"
+            image="@/public/huggingface-wiki.png"
             gitLink="https://github.com/harisdzl/wiki-question-answer-pair"
           />
         </Slide>

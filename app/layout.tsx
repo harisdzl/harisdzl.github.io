@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Haris Dzulkifli | Tech stuff",
   description: "Haris Portfolio",
   icons: {
-    icon: "public/duck-icon.png",
+    icon: "@/public/duck-icon.png",
   },
 };
 

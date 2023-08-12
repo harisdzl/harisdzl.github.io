@@ -43,7 +43,7 @@ const About = () => {
         <div className="absolute -bottom-8 -right-1 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div> */}
 
           <Image
-            src="public/haris-about.png"
+            src="@/public/haris-about.png"
             alt="haris about"
             height={40}
             width={345}
