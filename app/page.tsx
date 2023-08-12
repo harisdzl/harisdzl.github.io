@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="snap-y snap-mandatory h-screen w-screen overscroll-contain overflow-x-hidden">
       <section
-        className="snap-start relative z-0 w-full h-screen mx-auto items-center scroll-py-96"
+        className="snap-start relative z-0 w-full h-screen mx-auto items-center scroll-py-96 overflow-hidden"
         id="hero"
       >
         <div

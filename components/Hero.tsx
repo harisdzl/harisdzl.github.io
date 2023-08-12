@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             <div className="flex justify-center items-center">
               <Image
-                src="@/public/haris-bitmoji.png"
+                src="/haris-bitmoji.png"
                 alt="haris bitmoji"
                 height={100}
                 width={335.9}

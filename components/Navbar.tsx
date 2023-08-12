@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 
@@ -19,11 +19,16 @@ const Navbar = () => {
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
+        block: "center",
       });
     }
 
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    scrollToSection("hero");
+  }, []);
 
   return (
     <nav className="z-50 bg-white shadow border-gray-200 dark:bg-gray-900 p-2 sticky top-0">

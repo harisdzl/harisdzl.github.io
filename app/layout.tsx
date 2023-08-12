@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Haris Dzulkifli | Tech stuff",
   description: "Haris Portfolio",
   icons: {
-    icon: "@/public/duck-icon.png",
+    icon: "/duck-icon.png",
   },
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body className="relative overflow-hidden">
         <Navbar />
         {children}
         <Footer />
