@@ -14,7 +14,7 @@ export default function Home() {
         <div
           className="absolute top-0 left-1 w-full h-full bg-fixed bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/cool-background.svg')",
+            backgroundImage: "url('public/cool-background.svg')",
             opacity: "0.6",
           }}
         />
@@ -27,7 +27,7 @@ export default function Home() {
         <div
           className="absolute bottom-0 right-1 w-full h-full bg-fixed bg-cover bg-no-repeat"
           style={{
-            backgroundImage: "url('/cool-background.svg')",
+            backgroundImage: "url('public/cool-background.svg')",
             opacity: "0.6",
             transform: "rotate(180deg)",
             backgroundSize: "cover",
@@ -43,7 +43,7 @@ export default function Home() {
         <div
           className="absolute bottom-0 right-1 w-full h-full bg-fixed bg-cover bg-no-repeat"
           style={{
-            backgroundImage: "url('/cool-background.svg')",
+            backgroundImage: "url('public/cool-background.svg')",
             opacity: "0.6",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -58,7 +58,7 @@ export default function Home() {
         <div
           className="absolute bottom-0 right-1 w-full h-full bg-fixed bg-cover bg-no-repeat -z-1"
           style={{
-            backgroundImage: "url('/cool-background.svg')",
+            backgroundImage: "url('public/cool-background.svg')",
             opacity: "0.6",
             transform: "rotate(180deg)",
             backgroundSize: "cover",

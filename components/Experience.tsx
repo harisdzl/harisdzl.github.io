@@ -20,21 +20,21 @@ const Experience = () => {
             duration="June 2023 - Current"
             shortDescription="Data Analytics for Business Development"
             tags={["PrestoSQL", "Python", "Finance"]}
-            logo="/seamoney-logo.png"
+            logo="public/seamoney-logo.png"
           />
           <Timeline
             name="Shopee SPX - Opertional Excellence Intern"
             duration="Feb 2023 - Apr 2023"
             shortDescription="Finding lost parcels"
             tags={["Google Sheets", "PrestoSQL"]}
-            logo="/shopee-logo.png"
+            logo="public/shopee-logo.png"
           />
           <Timeline
             name="Grain - Business Develpoment Intern"
             duration="Apr 2021 - July 2023"
             shortDescription="Driving growth of products during Covid"
             tags={["Google Sheets", "Growth Hack"]}
-            logo="/grain-logo.png"
+            logo="public/grain-logo.png"
           />
         </Slide>
       </div>
