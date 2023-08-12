@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className="z-50 bg-white shadow border-gray-200 dark:bg-gray-900 p-2 sticky top-0">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-6 h-100 w-screen">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-6 w-screen">
         <a
           href="#"
           onClick={(e) => {

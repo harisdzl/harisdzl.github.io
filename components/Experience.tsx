@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div className="flex flex-col md:flex-col pt-24 sm:pt-26">
       <Slide>
-        <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl p-8 z-20">
+        <h1 className="font-extrabold text-3xl sm:text-5xl md:text-6xl p-8 z-20">
           Experiences.
         </h1>
       </Slide>

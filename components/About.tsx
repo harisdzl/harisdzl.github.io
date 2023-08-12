@@ -10,11 +10,11 @@ const About = () => {
     <div className="flex-col items-center justify-center flex md:flex-row sm:pt-48 m-3 pt-24">
       <Slide>
         <div className="md:flex-col flex-wrap max-w-xl p-4">
-          <h1 className="align-top font-extrabold text-4xl sm:text-5xl md:text-6xl pb-4">
+          <h1 className="align-top font-extrabold text-3xl sm:text-5xl md:text-6xl pb-4">
             About Me.
           </h1>
 
-          <p className="text-lg md:text-xl">
+          <p className="text-md md:text-xl">
             My name is Haris and I am currently a 3rd Year Business Analytics
             student at the National University of Singapore. I'm still figuring
             out the ways in life, but I am constantly trying to improve my
@@ -22,7 +22,7 @@ const About = () => {
             aspire to be able to build something impactful in the future.
           </p>
 
-          <h1 className="align-top font-extrabold text-2xl sm:text-3xl md:text-4xl pt-5">
+          <h1 className="align-top font-extrabold text-xl sm:text-3xl md:text-4xl pt-5">
             Skills.
           </h1>
           <div className="flex flex-row pt-3 flex-wrap">
@@ -47,7 +47,7 @@ const About = () => {
             alt="haris about"
             height={40}
             width={345}
-            className="w-[180px] sm:w-[345px]"
+            className="w-[150px] sm:w-[345px]"
           />
           <p className="text-gray-600 flex justify-center items-center italic text-xl pt-2">
             POV: Me.
