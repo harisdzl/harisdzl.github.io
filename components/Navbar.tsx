@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "react-scroll/modules";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +11,31 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionID: string) => {
+    const section = document.getElementById(sectionID);
+    const navbar = document.querySelector("nav");
+    const offset = navbar ? navbar.clientHeight : 0;
+    console.log(offset);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    setIsOpen(false);
+  };
+
   return (
-    <nav className="bg-white shadow border-gray-200 dark:bg-gray-900 p-2">
-      <div className="w-full flex flex-wrap items-center justify-between mx-auto p-6">
-        <a href="/" className="flex items-center font-extrabold text-4xl">
+    <nav className="z-50 bg-white shadow border-gray-200 dark:bg-gray-900 p-2 sticky top-0">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-6 h-100 w-screen">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("hero");
+          }}
+          className="flex items-center font-extrabold text-4xl"
+        >
           Haris.Dzl
         </a>
         <button
@@ -51,6 +72,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("about");
+                }}
                 className="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About
@@ -59,6 +84,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("experience");
+                }}
                 className="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Experience
@@ -67,6 +96,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("projects");
+                }}
                 className="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Projects

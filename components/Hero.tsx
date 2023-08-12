@@ -7,7 +7,6 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 
 import SocialIcon from "react-social-icons";
 
-
 const Hero = () => {
   const typedRef = useRef(null);
   const [showP, setShowP] = useState(false);
@@ -29,15 +28,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-row relative z-0 w-full mx-auto items-center bg-fixed pt-14">
-
+    <div className="flex flex-row relative z-0 w-full mx-auto items-center bg-fixed pt-36">
       <div className="flex-1 text-center">
-        <h1 className="2xl:text-[72px] sm:text-[72px] text-[50px] font-extrabold">
+        <h1 className="2xl:text-[72px] sm:text-[72px] text-[42px] font-extrabold">
           <span ref={typedRef}></span>
         </h1>
         {showP && (
           <Slide>
-            <p className="text-[30px] flex-wrap p-5 text-black-100 font-light">
+            <p className="sm:text-[30px] text-[24px] flex-wrap p-5 text-black-100 font-light">
               Passionate about solving {""}
               <span className="text-[30px] flex-wrap text-black-100 font-extrabold text-blue-700">
                 &lt;Problems /&gt;
@@ -71,6 +69,7 @@ const Hero = () => {
                 alt="haris bitmoji"
                 height={100}
                 width={335.9}
+                className="w-3/4 sm:w-[335.9px]"
               />
             </div>
           </Slide>

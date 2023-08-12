@@ -3,33 +3,40 @@ import React, { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
+import Timeline from "./Timeline";
 
 const Experience = () => {
   return (
-    <div className="flex items-center justify-center pt-40">
-      <div className="flex-col flex-wrap max-w-xl p-4">
-        <h1 className="align-top font-extrabold text-6xl pb-4">About Me.</h1>
-
-        <p className=" text-xl">
-          My name is Haris and I am currently a 3rd Year Business Analytics
-          student at the National University of Singapore. I'm still figuring
-          out the ways in life, but I am constantly trying to improve my design
-          thinking abilities and I enjoy learning new technologies and I aspire
-          to be able to build something impactful in the future.
-        </p>
-      </div>
-
-      <div className="relative">
-        {/* <div className="absolute -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
-        <div className="absolute -right-4 w-72 h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-2xl text-opacity-100 animate-blob"></div>
-        <div className="absolute -bottom-8 -right-1 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div> */}
-
-        <Image
-          src="/haris-about.png"
-          alt="haris about"
-          height={40}
-          width={345}
-        />
+    <div className="flex flex-col md:flex-col pt-24 sm:pt-26">
+      <Slide>
+        <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl p-8 z-20">
+          Experiences.
+        </h1>
+      </Slide>
+      <div className="flex flex-col md:flex-col px-12 overflow-y-auto h-60v">
+        <Slide delay={100} cascade damping={0.1}>
+          <Timeline
+            name="Seamoney - Retail Finance Intern"
+            duration="June 2023 - Current"
+            shortDescription="Data Analytics for Business Development"
+            tags={["PrestoSQL", "Python", "Finance"]}
+            logo="/seamoney-logo.png"
+          />
+          <Timeline
+            name="Shopee SPX - Opertional Excellence Intern"
+            duration="Feb 2023 - Apr 2023"
+            shortDescription="Finding lost parcels"
+            tags={["Google Sheets", "PrestoSQL"]}
+            logo="/shopee-logo.png"
+          />
+          <Timeline
+            name="Grain - Business Develpoment Intern"
+            duration="Apr 2021 - July 2023"
+            shortDescription="Driving growth of products during Covid"
+            tags={["Google Sheets", "Growth Hack"]}
+            logo="/grain-logo.png"
+          />
+        </Slide>
       </div>
     </div>
   );
