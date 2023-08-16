@@ -23,7 +23,7 @@ const Experience = () => {
             logo="/seamoney-logo.png"
           />
           <Timeline
-            name="Shopee SPX - Opertional Excellence Intern"
+            name="Shopee SPX - Operational Excellence Intern"
             duration="Feb 2023 - Apr 2023"
             shortDescription="Finding lost parcels"
             tags={["Google Sheets", "PrestoSQL"]}
@@ -31,7 +31,7 @@ const Experience = () => {
           />
           <Timeline
             name="Grain - Business Develpoment Intern"
-            duration="Apr 2021 - July 2023"
+            duration="Apr 2021 - July 2021"
             shortDescription="Driving growth of products during Covid"
             tags={["Google Sheets", "Growth Hack"]}
             logo="/grain-logo.png"
