@@ -16,8 +16,15 @@ const Experience = () => {
       <div className="flex flex-col md:flex-col px-12 overflow-y-auto h-60v">
         <Slide delay={100} cascade damping={0.1}>
           <Timeline
+            name="Quqo - Software Engineer Intern"
+            duration="Jan 2024 - Current"
+            shortDescription="Backend Engineer for Quqo's B2B Marketplace"
+            tags={["Go", "AWS", "PostgreSQL", "Redis"]}
+            logo="/quqo-logo.png"
+          />
+          <Timeline
             name="Seamoney - Retail Finance Intern"
-            duration="June 2023 - Current"
+            duration="June 2023 - Aug 2023"
             shortDescription="Data Analytics for Business Development"
             tags={["PrestoSQL", "Python", "Finance"]}
             logo="/seamoney-logo.png"
